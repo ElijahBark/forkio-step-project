@@ -1,0 +1,35 @@
+$font-stack: 'Montserrat', sans-serif;
+
+.what-you-get{
+  background-color: #f4f4f4;
+  font-family: $font-stack;
+  width: 100%;
+  min-height: 711px;
+}
+
+.container{
+  width: 1200px;
+  height: 100%;
+  background: #f4f4f4;
+}
+
+.feature-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-list__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  //temp
+  background-color: #fbffa6;
+  margin: 34px 90px;
+}
+
+.feature-text-container{
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+}
