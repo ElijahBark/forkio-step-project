@@ -70,7 +70,7 @@ gulp.task('copy-css', ['minify-css'], () => {
 // tasks for JS files
 
 gulp.task('clean-js', ()=> {
-    return gulp.src('./src/js/script.js', {read: false})
+    return gulp.src('./dist/js/script.js', {read: false})
         .pipe(clean());
 });
 
@@ -101,7 +101,7 @@ gulp.task('minify-img',()=>{
     return gulp.src('./src/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img/'))
-})
+});
 
 
 
