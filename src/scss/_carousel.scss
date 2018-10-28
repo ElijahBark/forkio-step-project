@@ -1,0 +1,19 @@
+$font-stack: 'Montserrat', sans-serif;
+
+.carousel{
+  background-color: #fff;
+  font-family: $font-stack;
+  width: 1380px;
+  min-height: 589px;
+  margin: 0 auto;
+  border-bottom: 1px black solid;
+}
+
+.carousel__container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 84px 10px 20px 10px;
+  width: 1200px;
+  height: 100%;
+}
