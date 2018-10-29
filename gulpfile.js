@@ -9,6 +9,11 @@ let gulp = require('gulp'),
     clean = require('gulp-clean'),
     imagemin = require('gulp-imagemin');
 
+gulp.task('copy-plugins',()=>{
+    return gulp.src('./src/plugins/*')
+        .pipe(gulp.dest('./dist/plugins'));
+});
+
 gulp.task('copy-html',()=>{
     return gulp.src('./src/**/*.html')
         .pipe(gulp.dest('./dist/'));
@@ -77,23 +82,23 @@ gulp.task('clean-js', ()=> {
 gulp.task('concat-js',['clean-js'],()=>{
     return gulp.src('./src/js/**/*.js')
         .pipe(concat('script.js'))
-        .pipe(gulp.dest('./src/js/'));
+        .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('minify-js', ['concat-js'], (cb) => {
     pump([
-            gulp.src('./src/js/script.js'),
+            gulp.src('./dist/js/script.js'),
             uglify(),
-            gulp.dest('./src/js/')
+            gulp.dest('./dist/js/')
         ],
         cb
     );
 });
 
-gulp.task('copy-js',['minify-js'], () => {
+/*gulp.task('copy-js',['minify-js'], () => {
     return gulp.src('./src/js/script.js')
         .pipe(gulp.dest('./dist/js/'))
-});
+});*/
 
 // tasks for images
 
@@ -105,7 +110,7 @@ gulp.task('minify-img',()=>{
 
 
 
-gulp.task('serve',['copy-html','copy-css','copy-js','minify-img'], ()=> {
+gulp.task('serve',['copy-html','copy-css','minify-js','minify-img', 'copy-plugins'], ()=> {
     browserSync.init({
         server: {
             baseDir: "./dist"
@@ -114,7 +119,7 @@ gulp.task('serve',['copy-html','copy-css','copy-js','minify-img'], ()=> {
 
     gulp.watch('./src/**/*.html', ['copy-html']).on('change', browserSync.reload);
     gulp.watch('./src/scss/**/*.scss', ['copy-css']).on('change', browserSync.reload);
-    gulp.watch('./src/js/**/*.js', ['copy-js']).on('change', browserSync.reload);
+    gulp.watch('./src/js/**/*.js', ['minify-js']).on('change', browserSync.reload);
 });
 
 gulp.task('dev',['clean-dist'],()=>{
@@ -124,6 +129,7 @@ gulp.task('dev',['clean-dist'],()=>{
 gulp.task('build', ['clean-dist'],()=>{
     gulp.start('copy-html');
     gulp.start('copy-css');
-    gulp.start('copy-js');
+    gulp.start('minify-js');
     gulp.start('minify-img');
+    gulp.start('copy-plugins');
 });
