@@ -1,0 +1,47 @@
+$lato: 'Lato', sans-serif;
+$monserrat: 'Montserrat', sans-serif;
+$grey: rgba(162, 145, 165, 0.8);
+
+@mixin section-background($img) {
+  background-image: url($img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin section-flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin container {
+  width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@mixin font-style($size, $family, $weight, $line-height) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: #ffffff;
+  text-align: center;
+  line-height: $line-height;
+}
+
+@mixin after-element($width, $height, $color, $top, $bottom) {
+  content: '';
+  width: $width;
+  display: block;
+  height: $height;
+  margin: $top auto $bottom;
+  background-color:  $color;
+}
+
+@mixin btn($color) {
+  background-color:  $color;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

@@ -1,0 +1,133 @@
+@import "temp";
+
+.order {
+  background-color: #f4f4f4;
+
+  .container {
+    @include section-flexbox;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 54px 10px;
+  }
+
+  &__title {
+    @include font-style(30px, $monserrat, 700, 'normal');
+    color:  #635c73;
+    flex-basis: 30%;
+    text-align: left;
+  }
+
+  &__second-title {
+    display: none;
+  }
+
+  &__form {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    @include btn(#8d81ac);
+    font-size: 13px;
+    font-family: $monserrat;
+    padding: 16px 40px;
+    border: 1px solid #8d81ac;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    color: #8d81ac;
+    background-color: #fff;
+    border: 1px solid #8d81ac;
+  }
+
+  &__item {
+    border: none;
+    border-radius: 50px;
+    flex-basis: 34%;
+    outline: none;
+    color: #8d81ac;
+  }
+
+  &__item[type="text"]::placeholder {
+    color: #c8cbcf;
+    font-size: 14px;
+  }
+
+  &__item[type="text"] {
+    padding-left: 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .order {
+    padding: 0 10px;
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 54px 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  .order {
+    .container {
+      padding: 22px 0;
+    }
+
+    &__title {
+      flex-basis: 100%;
+      text-align: center;
+    }
+
+    &__form {
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      display: block;
+      flex-basis: 35%;
+      margin: 26px 3%;
+      padding: 16px 0;
+    }
+  }
+
+}
+
+@media (max-width: 481px) {
+    .order {
+      .container {
+        padding: 50px 0;
+      }
+      &__item {
+        flex-basis: 80%;
+        margin:0 0 15px ;
+      }
+
+      &__form {
+        margin-top: 45px;
+      }
+
+      &__title {
+        display: none;
+      }
+
+      &__second-title {
+        flex-basis: 100%;
+        display: block;
+        @include font-style(28px, $monserrat, 700, 'normal');
+        color:  #323232;
+      }
+    }
+}
+
+

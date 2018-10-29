@@ -1,0 +1,109 @@
+.container {
+  width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: "normal";
+  margin: 0;
+  padding-top: 98px; }
+
+.company-reviews {
+  background-image: url("../img/company-reviews-layer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .company-reviews__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .company-reviews__item {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    font-style: italic;
+    margin-top: 95px; }
+  .company-reviews__company-logo {
+    height: 50px;
+    line-height: 50px; }
+  .company-reviews__text {
+    margin-top: 37px; }
+  .company-reviews__description {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    line-height: 21px;
+    color: rgba(162, 145, 165, 0.8);
+    margin: 119px 0 0;
+    padding: 0 80px; }
+    .company-reviews__description:after {
+      content: '';
+      width: 80%;
+      display: block;
+      height: 2px;
+      margin: 16px auto 0;
+      background-color: rgba(162, 145, 165, 0.8); }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .company-reviews {
+    padding: 0 10px; } }
+
+@media (max-width: 992px) {
+  .section-title {
+    padding: 98px 0 0; }
+  .company-reviews__item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
+
+@media (max-width: 481px) {
+  .section-title {
+    font-size: 42px; }
+  .company-reviews__item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  .company-reviwes__text {
+    padding: 0 60px; }
+  .company-reviews__description {
+    display: none; }
+  .company-reviewes__container:after {
+    content: '';
+    width: 80%;
+    display: block;
+    height: 2px;
+    margin: 50px auto 25px;
+    background-color: rgba(162, 145, 165, 0.8); }
+  .section-title {
+    font-size: 42px; }
+  .company-reviews__company-logo {
+    height: 40px;
+    line-height: 40px; } }
+
+@media (max-width: 402px) {
+  .section-title {
+    font-size: 36px;
+    padding: 60px 0 0; }
+  .company-reviews__item {
+    margin-top: 49px; }
+  .company-reviwes__text {
+    margin-top: 33px; } }
