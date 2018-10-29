@@ -9,12 +9,13 @@ $(document).ready(function(){
         asNavFor: '.carousel__slider'
     });
     $('.carousel__slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 1,
+        slidesToScroll: 3,
         asNavFor: '.carousel__avatar',
         dots: true,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        centerMode: true
     });
 });
 
