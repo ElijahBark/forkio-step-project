@@ -52,13 +52,13 @@ $font-stack: 'Montserrat', sans-serif;
 .carousel__slider{
   margin: 25px auto;
 
-  div{
+  /*div{
     width: 734px;
     height: 52px;
     font-family: $font-stack;
     font-weight: 400;
     font-size: 20px;
-  }
+  }*/
 }
 
 .slick-prev:before {
@@ -66,4 +66,14 @@ $font-stack: 'Montserrat', sans-serif;
 }
 .slick-next:before {
   color: #a4a4a4;
+}
+
+
+.slick-slide{
+  width: 734px;
+  height:90px;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
 }
