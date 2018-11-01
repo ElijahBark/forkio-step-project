@@ -1,8 +1,9 @@
-$font-stack: 'Montserrat', sans-serif;
+$font-stack-montserrat: 'Montserrat', sans-serif;
+$font-stack-lato: 'Lato', sans-serif;
 
 .carousel{
   background-color: #fff;
-  font-family: $font-stack;
+  font-family: $font-stack-montserrat;
   width: 1380px;
   min-height: 589px;
   margin: 0 auto;
@@ -18,7 +19,6 @@ $font-stack: 'Montserrat', sans-serif;
 
 .carousel__container{
   margin:0 auto;
-  padding-top: 20px;
   width: 945px;
   min-height: 422px;
   background-color: #a9e7ff;
@@ -27,38 +27,63 @@ $font-stack: 'Montserrat', sans-serif;
 
 .carousel__avatar{
   height: 85px;
-  width: 450px;
+  width: 734px;
   margin: 0 auto 48px auto;
 
-  div{
+  .carousel__avatar_content{
+    padding-left: 47px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     margin: 0 auto;
 
     img{
+      margin-right: 23px;
       display: inline;
-      margin: 0 0;
+
     }
 
-    p{
-      display: inline-block;
-      margin: 0 0;
-    }
+    .carousel__avatar_text_container{
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 44px;
 
+      .carousel__name{
+        margin: 16px 0 0 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: #635c73;
+      }
+
+      .carousel__twitter_name{
+        margin: 0 0 19px 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #8d81ac;
+      }
+    }
   }
 }
 
 .carousel__slider{
   margin: 25px auto;
+  width:734px;
 
-  /*div{
-    width: 734px;
-    height: 52px;
-    font-family: $font-stack;
+  div{
+    text-align: center;
+    font-family: $font-stack-lato;
     font-weight: 400;
     font-size: 20px;
-  }*/
+    line-height: 32px;
+
+    p{
+      display: inline;
+    }
+  }
 }
 
 .slick-prev:before {
@@ -68,12 +93,7 @@ $font-stack: 'Montserrat', sans-serif;
   color: #a4a4a4;
 }
 
-
-.slick-slide{
-  width: 734px;
-  height:90px;
-  font-family: $font-stack;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
+.purple{
+  color: #8d81ac;
 }
+
