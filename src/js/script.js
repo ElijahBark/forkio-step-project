@@ -14,7 +14,7 @@ $(document).ready(function(){
         asNavFor: '.carousel__avatar',
         centerMode: true,
         focusOnSelect: true,
-        adaptiveHeight: true
+        // adaptiveHeight: true
     });
 });
 
