@@ -4,73 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__logo">
-        <div class="header__logo-img"></div>
-        <div class="header__logo-title">Forkio</div>
-    </div>
-    <nav class="header__nav">
-        <ul class="header__menu">
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Overview</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">About Fork</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Buying Options</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Support</a></li>
-        </ul>
-        <a href="" class="header__btn btn">Buy Now</a>
-    </nav>
-</header>
-<section class="slogan-block">
-    <h1 class="slogan-block__title">Fork App</h1>
-    <p class="slogan-block__description">A real gamechanger in the world of web development</p>
-    <p class="slogan-block__version">v. 2.8 for mac and windows</p>
-    <a href="" class="btn slogan-block__btn">Download for free now</a>
-    <p class="slogan-block__trial">Unlimited 30-Days Trial Period</p>
-</section>
-<section class="users-statistic">
-    <h2 class="users-statistic__title">Revolutionary editor</h2>
-    <p class="users-statistic__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta doloribus, enim laudantium libero necessitatibus nemo qui, reprehenderit rerum soluta sunt voluptate.</p>
-    <div class="users-statistic__counters"></div>
-</section>
-<section class="product-description">
-    <div class="product-description__item">
-        <img src="img/product-descr-1.png" alt="" class="product-description__item-img">
-        <h3 class="product-description__item-title">Created to Make The Web Better</h3>
-        <p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-    </div>
-    <div class="product-description__item">
-        <img src="img/product-descr-2.png" alt="" class="product-description__item-img">
-        <h3 class="product-description__item-title">Incredibly Powerful Tool</h3>
-        <p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-    </div>
-    <div class="product-description__item">
-        <img src="img/product-descr-3.png" alt="" class="product-description__item-img">
-        <h3 class="product-description__item-title">Experimental Stuff</h3>
-        <p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-    </div>
-    <div class="product-description__item">
-        <img src="img/product-descr-4.png" alt="" class="product-description__item-img">
-        <h3 class="product-description__item-title">Created to Make The Web Better</h3>
-        <p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>
-    </div>
-    <h2 class="product-description__title">&lt;Here is what you get&gt;</h2>
-    <img src="img/product-descr-main-img.png" alt="" class="product-description__img">
-</section>
-<section class="people-reviews">
+<div class="container">
+    <header class="header">
+        <div class="header__logo">
+            <a href="#" class="header__logo-img"></a>
+            <a href="#" class="header__logo-title">Forkio</a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Overview</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">About Fork</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Buying Options</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Support</a></li>
+            </ul>
+            <a href="" class="header__btn btn">Buy Now</a>
+        </nav>
+    </header>
+    <section class="slogan-block">
+        <h1 class="slogan-block__title">Fork App</h1>
+        <p class="slogan-block__description">A real gamechanger in the world of web development</p>
+        <p class="slogan-block__version">v. 2.8 for mac and windows</p>
+        <a href="" class="btn slogan-block__btn">Download for free now</a>
+        <p class="slogan-block__trial">Unlimited 30-Days Trial Period</p>
+    </section>
+    <section class="users-statistic">
+        <h2 class="users-statistic__title">Revolutionary editor</h2>
+        <p class="users-statistic__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta
+            doloribus, enim laudantium libero necessitatibus nemo qui, reprehenderit rerum soluta sunt voluptate.</p>
+        <div class="users-statistic__counters">
+            <div class="users-statistic__counter">
+                <a href="#" class="users-statistic__counter-kind">
+                    <svg class="octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/>
+                    </svg>
+                    <span class="users-statistic__counter-text">Watch</span>
+                </a>
+                <div class="users-statistic__counter-number">1,397</div>
+            </div>
+            <div class="users-statistic__counter">
+                <a href="#" class="users-statistic__counter-kind">
+                    <svg class="octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/>
+                    </svg>
+                    <span class="users-statistic__counter-text">Star</span>
+                </a>
+                <div class="users-statistic__counter-number">21,038</div>
+            </div>
+            <div class="users-statistic__counter">
+                <a href="#" class="users-statistic__counter-kind">
+                    <svg class="octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16"
+                         aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/>
+                    </svg>
+                    <span class="users-statistic__counter-text">Fork</span>
+                </a>
+                <div class="users-statistic__counter-number">4,931</div>
+            </div>
 
-</section>
-<section class="company-reviews">
 
-</section>
-<section class="prices"></section>
-<section class="order">
+        </div>
+    </section>
+    <section class="product-description">
+        <!--<div class="product-description__items">-->
+        <!--<div class="product-description__item">-->
+        <!--<img src="img/product-descr-1.png" alt="" class="product-description__item-img">-->
+        <!--<h3 class="product-description__item-title">Created to Make The Web Better</h3>-->
+        <!--<p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>-->
+        <!--</div>-->
+        <!--<div class="product-description__item">-->
+        <!--<img src="img/product-descr-2.png" alt="" class="product-description__item-img">-->
+        <!--<h3 class="product-description__item-title">Incredibly Powerful Tool</h3>-->
+        <!--<p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>-->
+        <!--</div>-->
+        <!--<div class="product-description__item">-->
+        <!--<img src="img/product-descr-3.png" alt="" class="product-description__item-img">-->
+        <!--<h3 class="product-description__item-title">Experimental Stuff</h3>-->
+        <!--<p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>-->
+        <!--</div>-->
+        <!--<div class="product-description__item">-->
+        <!--<img src="img/product-descr-4.png" alt="" class="product-description__item-img">-->
+        <!--<h3 class="product-description__item-title">Created to Make The Web Better</h3>-->
+        <!--<p class="product-description__item-text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="product-description__example">-->
+        <!--<h2 class="product-description__title">&lt;Here is what you get&gt;</h2>-->
+        <!--<img src="img/product-descr-main-img.png" alt="" class="product-description__img">-->
+        <!--</div>-->
+    </section>
+    <section class="people-reviews">
 
-</section>
+    </section>
+    <section class="company-reviews">
 
-<footer class="footer">
+    </section>
+    <section class="prices"></section>
+    <section class="order">
 
-</footer>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+</div>
 
 </body>
 </html>
