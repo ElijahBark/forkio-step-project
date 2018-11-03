@@ -81,7 +81,7 @@ $font-stack: 'Montserrat', sans-serif;
 
   .title{
     text-align: center;
-    margin: 0 auto;
+    margin: 16px auto 0 auto;
     color: #8d81ac;
     font-weight: 700;
     font-size: 32px;
@@ -90,7 +90,7 @@ $font-stack: 'Montserrat', sans-serif;
 
   .editor-mobile{
     margin-left: -7px;
-    margin-top: 20px;
+    margin-top: 37px;
     width: 317px;
     height: 381px;
     background-image: url("../img/editor-test.png");

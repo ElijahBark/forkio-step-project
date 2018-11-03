@@ -9,11 +9,8 @@ $(document).ready(function(){
         asNavFor: '.carousel__slider'
     });
     $('.carousel__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 3,
         asNavFor: '.carousel__avatar',
-        centerMode: true,
-        focusOnSelect: true,
+        adaptiveHeight: true
         // adaptiveHeight: true
     });
 });
