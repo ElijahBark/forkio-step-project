@@ -1,0 +1,71 @@
+$font-stack-montserrat: 'Montserrat', sans-serif;
+$font-stack-lato: 'Lato', sans-serif;
+
+@media only screen and (min-width: 993px) {
+
+  .carousel{
+    background-color: #fff;
+    font-family: $font-stack-montserrat;
+    width: 1380px;
+    min-height: 589px;
+    margin: 0 auto;
+  }
+
+  .carousel__content-container{
+    margin: 0 auto;
+    padding: 87px 10px 80px 10px;
+    width: 1200px;
+    height: 100%;
+  }
+
+  .carousel__container{
+    margin:0 auto;
+    width: 952px;
+    min-height: 285px;
+  }
+
+  .carousel__avatar{
+    height: 85px;
+    width: 734px;
+    margin: 0 auto 40px auto;
+
+    .carousel__avatar_content{
+      padding-left: 47px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 0 auto;
+
+      img{
+        margin-right: 23px;
+        display: inline;
+
+      }
+
+      .carousel__avatar_text_container{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 44px;
+
+        .carousel__name{
+          margin: 16px 0 0 0;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29px;
+          color: #635c73;
+        }
+
+        .carousel__twitter_name{
+          margin: 0 0 19px 0;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #8d81ac;
+        }
+      }
+    }
+  }
+
+}

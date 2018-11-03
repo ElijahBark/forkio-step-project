@@ -3,7 +3,7 @@ $font-stack: 'Montserrat', sans-serif;
 .what-you-get{
   background-color: #f4f4f4;
   font-family: $font-stack;
-  width: 1380px;
+  width: 320px;
   min-height: 711px;
   margin: 0 auto;
 }
@@ -12,8 +12,8 @@ $font-stack: 'Montserrat', sans-serif;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 84px 10px 20px 10px;
-  width: 1200px;
+  padding: 34px 10px 6px 10px;
+  width:  300px;
   height: 100%;
 }
 
@@ -26,12 +26,12 @@ $font-stack: 'Montserrat', sans-serif;
 
 .feature-list__item{
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   width: 500px;
   height: 100px;
   margin-top: 6px;
-  //margin-bottom: 34px;
 }
 
 .feature-list__img-container{
@@ -80,4 +80,31 @@ $font-stack: 'Montserrat', sans-serif;
     font-size: 48px;
     line-height: 40px;
   }
+}
+
+@media only screen and (min-width: 401px) {
+  /* Large phone: */
+
+}
+
+@media only screen and (min-width: 481px) {
+  /* Tablet: */
+
+}
+
+@media only screen and (min-width: 993px) {
+  /* For desktop: */
+  .what-you-get {
+    width: 1380px;
+  }
+
+  .container {
+    width: 1200px;
+    padding: 87px 10px 80px 10px;
+  }
+
+  .feature-list__item{
+    flex-direction: row;
+  }
+
 }
