@@ -15,6 +15,7 @@
   flex-basis: 22%;
   margin-top: 71px;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &__price {
     font-size: 60px;
