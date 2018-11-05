@@ -13,9 +13,7 @@ $(document).ready(function(){
         adaptiveHeight: true
         // adaptiveHeight: true
     });
-});
 
-$(document).ready(function(){
     $(".twitter_btn").hover(function () {
             $(this).css({
                 "background-color" : "#ffffff",
@@ -28,9 +26,7 @@ $(document).ready(function(){
                 "color" : "#ffffff"
             })
         });
-});
 
-$(document).ready(function(){
     $(".github_btn").hover(function () {
             $(this).css({
                 "background-color" : "#273f4c",
@@ -43,9 +39,7 @@ $(document).ready(function(){
                 "color" : "#000"
             })
         });
-});
 
-$(document).ready(function(){
     $(".facebook_btn").hover(function () {
             $(this).css({
                 "background-color" : "#ffffff",
