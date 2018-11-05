@@ -15,6 +15,47 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $(".twitter_btn").hover(function () {
+            $(this).css({
+                "background-color" : "#ffffff",
+                "color" : "#21a7d2"
+            })
+        },
+        function () {
+            $(this).css({
+                "background-color" : "#21a7d2",
+                "color" : "#ffffff"
+            })
+        });
+});
 
+$(document).ready(function(){
+    $(".github_btn").hover(function () {
+            $(this).css({
+                "background-color" : "#273f4c",
+                "color" : "#fff"
+            })
+        },
+        function () {
+            $(this).css({
+                "background-color" : "#f3f3f3",
+                "color" : "#000"
+            })
+        });
+});
 
-
+$(document).ready(function(){
+    $(".facebook_btn").hover(function () {
+            $(this).css({
+                "background-color" : "#ffffff",
+                "color" : "#385899"
+            })
+        },
+        function () {
+            $(this).css({
+                "background-color" : "#385899",
+                "color" : "#ffffff"
+            })
+        });
+});

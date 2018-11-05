@@ -1,7 +1,7 @@
 $font-stack-montserrat: 'Montserrat', sans-serif;
 $font-stack-lato: 'Lato', sans-serif;
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 481px) and (max-width: 992px) {
 
   .carousel {
     background-color: #fff;
