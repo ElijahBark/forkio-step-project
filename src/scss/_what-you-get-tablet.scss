@@ -1,4 +1,136 @@
-@media only screen and (min-width: 481px) {
+$font-stack: 'Montserrat', sans-serif;
+
+@media only screen and (max-width: 992px) {
+  .feature-list__title-mobile {
+    width: 100%;
+  }
+
+  .what-you-get{
+    background-color: #f4f4f4;
+    font-family: $font-stack;
+    //
+    width: 768px;
+    min-height: 1259px;
+
+    margin: 0 auto;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    //
+    padding: 46px 10px 6px 10px;
+
+    width:  748px;
+
+    height: 100%;
+  }
+
+  .feature-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .feature-list__item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 110px;
+    //
+    margin-top: 28px;
+  }
+
+  //
+  .better-web-img-cont {
+    margin-left: 14px;
+  }
+  //
+  .power-tool-img-cont{
+    margin-left: 4px;
+  }
+  //
+  .exp-stuff-img-cont{
+    margin-left: 4px;
+  }
+  //
+  .better-web2-img-cont{
+    margin-left: 5px;
+    padding-top: 6px;
+  }
+
+  //
+  .feature-list__img-container{
+    position: relative;
+    //
+    width: 20%;
+    height: 84px;
+    img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+  }
+
+  .feature-text-container{
+    display: flex;
+    flex-direction: column;
+    //
+    width: 100%;
+    margin-left: 22px;
+    .feature-text-container__header{
+      color: #323232;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0 0;
+      line-height: 16px;
+    }
+
+    .feature-text-container__text{
+      width: 97%;
+      margin: 12px 0 0 0;
+      color: #848e97;
+      font-weight: 400;
+
+      //
+      font-size: 14px;
+
+      line-height: 22px;
+    }
+  }
+
+  .editor-display{
+    display: none;
+  }
+
+  .title{
+    //
+    width: 75%;
+    margin: 0 auto 28px auto;
+    line-height: 53px;
+
+    color: #8d81ac;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  //
+  .editor-mobile{
+    align-self: flex-end;
+    margin-right: -10px;
+    margin-top: 38px;
+    width: 758px;
+    height: 519px;
+    background-image: url("../img/editor-tablet.png");
+  }
+
 
 
 }
