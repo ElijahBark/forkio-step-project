@@ -1,0 +1,30 @@
+@import "my-variables";
+
+@include large-phone{
+
+  .carousel__content-container {
+    padding: 120px 10px 6px 10px;
+    width:  $large-phone-width;
+  }
+
+  .carousel__avatar{
+    .carousel__avatar_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img{
+        margin-right: 23px;
+      }
+    }
+  }
+
+  .carousel__container{
+    min-height: 150px;
+    margin-bottom: 55px;
+  }
+
+  .carousel__social-media{
+    margin: 0 auto;
+  }
+}

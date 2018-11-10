@@ -80,7 +80,7 @@ gulp.task('concat-js',['clean-js'],()=>{
         .pipe(gulp.dest('./dist/js/'));
 });
 
-gulp.task('minify-js', ['copy-js'], (cb) => {
+gulp.task('minify-js', ['concat-js'], (cb) => {
     pump([
             gulp.src('./dist/js/script.js'),
             uglify(),
@@ -90,10 +90,10 @@ gulp.task('minify-js', ['copy-js'], (cb) => {
     );
 });
 
-gulp.task('copy-js',['concat-js'], () => {
+/*gulp.task('copy-js',['minify-js'], () => {
     return gulp.src('./src/js/script.js')
         .pipe(gulp.dest('./dist/js/'))
-});
+});*/
 
 // tasks for images
 
@@ -105,7 +105,7 @@ gulp.task('minify-img',()=>{
 
 
 
-gulp.task('serve',['copy-html','copy-css','minify-js','minify-img'], ()=> {
+gulp.task('serve',['copy-html','copy-css','minify-js','minify-img', 'copy-plugins'], ()=> {
     browserSync.init({
         server: {
             baseDir: "./dist"
@@ -126,4 +126,5 @@ gulp.task('build', ['clean-dist'],()=>{
     gulp.start('copy-css');
     gulp.start('minify-js');
     gulp.start('minify-img');
+    gulp.start('copy-plugins');
 });

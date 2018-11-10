@@ -1,0 +1,59 @@
+@import "my-variables";
+
+@include desktop{
+
+  .carousel__content-container {
+    padding: 63px 10px 6px 10px;
+    width:  $desktop-width;
+  }
+
+  .carousel__avatar{
+    .carousel__avatar_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img{
+        margin-right: 23px;
+      }
+    }
+  }
+
+  .carousel__slider{
+    .carousel__slider_content{
+      font-size: 20px;
+    }
+  }
+
+  .carousel__social-media {
+    box-sizing: border-box;
+    padding: 0 88px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 16px auto 0 auto;
+  }
+
+  .social-media__container {
+    width: 240px;
+
+    div{
+      width: 240px;
+    }
+  }
+
+  .carousel__social-media:before{
+    margin: auto;
+    content: "";
+    position: absolute;
+    top: -55%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #000;
+    width: 780px;
+    opacity: 0.1;
+  }
+
+
+}
