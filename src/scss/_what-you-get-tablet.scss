@@ -4,15 +4,45 @@
 
   .what-you-get__container {
     grid-template-rows: 41px auto 519px;
+    width: $tablet-width;
+    padding: 54px 10px 6px 23px;
   }
 
-  .what-you-get__container{
-    width: $tablet-width;
+  .editor-title{
+    align-self: start;
+    justify-self: center;
+    text-align: center;
+    font-size: 42px;
+    line-height: 42px;
+
+    p{
+      margin: 0;
+    }
+  }
+
+  .feature-list{
+    margin: 45px 0 50px 0;
   }
 
   .feature-list__item{
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 100px;
+  }
+
+  .feature-text-container{
+    width: 82%;
+    text-align: start;
+  }
+
+  .feature-list__img-container {
+    position: relative;
+    width: 111px;
+    height: 84px;
+    margin-top: 1px;
   }
 
   .editor-image{
