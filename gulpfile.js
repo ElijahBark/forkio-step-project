@@ -77,20 +77,20 @@ gulp.task('clean-js', ()=> {
 gulp.task('concat-js',['clean-js'],()=>{
     return gulp.src('./src/js/**/*.js')
         .pipe(concat('script.js'))
-        .pipe(gulp.dest('./src/js/'));
+        .pipe(gulp.dest('./dist/js/'));
 });
 
-gulp.task('minify-js', ['concat-js'], (cb) => {
+gulp.task('minify-js', ['copy-js'], (cb) => {
     pump([
-            gulp.src('./src/js/script.js'),
+            gulp.src('./dist/js/script.js'),
             uglify(),
-            gulp.dest('./src/js/')
+            gulp.dest('./dist/js/')
         ],
         cb
     );
 });
 
-gulp.task('copy-js',['minify-js'], () => {
+gulp.task('copy-js',['concat-js'], () => {
     return gulp.src('./src/js/script.js')
         .pipe(gulp.dest('./dist/js/'))
 });
@@ -105,7 +105,7 @@ gulp.task('minify-img',()=>{
 
 
 
-gulp.task('serve',['copy-html','copy-css','copy-js','minify-img'], ()=> {
+gulp.task('serve',['copy-html','copy-css','minify-js','minify-img'], ()=> {
     browserSync.init({
         server: {
             baseDir: "./dist"
@@ -114,7 +114,7 @@ gulp.task('serve',['copy-html','copy-css','copy-js','minify-img'], ()=> {
 
     gulp.watch('./src/**/*.html', ['copy-html']).on('change', browserSync.reload);
     gulp.watch('./src/scss/**/*.scss', ['copy-css']).on('change', browserSync.reload);
-    gulp.watch('./src/js/**/*.js', ['copy-js']).on('change', browserSync.reload);
+    gulp.watch('./src/js/**/*.js', ['minify-js']).on('change', browserSync.reload);
 });
 
 gulp.task('dev',['clean-dist'],()=>{
@@ -124,6 +124,6 @@ gulp.task('dev',['clean-dist'],()=>{
 gulp.task('build', ['clean-dist'],()=>{
     gulp.start('copy-html');
     gulp.start('copy-css');
-    gulp.start('copy-js');
+    gulp.start('minify-js');
     gulp.start('minify-img');
 });

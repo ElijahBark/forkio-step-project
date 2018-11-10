@@ -1,0 +1,20 @@
+html {
+  font-size: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8d81ac;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #8d81ac;
+  border: 1px solid #8d81ac;
+}
+
