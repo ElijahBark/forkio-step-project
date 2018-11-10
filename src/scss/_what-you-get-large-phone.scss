@@ -7,7 +7,7 @@
   }
 
   .what-you-get__container{
-    width: 480px;
+    width: $large-phone-width;
   }
 
   .feature-list__item{
@@ -19,18 +19,6 @@
     background-image: url(../img/editor-480px.png);
     height: 519px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
