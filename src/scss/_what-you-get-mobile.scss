@@ -2,6 +2,7 @@
 
 .what-you-get{
   width: 100%;
+  background-color: #f4f4f4;
 }
 
 .what-you-get__container{
@@ -25,11 +26,14 @@
   align-self: center;
   justify-self: center;
   text-align: center;
-  margin: 16px auto 0 auto;
-  color: #8d81ac;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 40px;
+  p{
+    font-family: $font-stack-mont;
+    margin: 16px auto 0 auto;
+    color: #8d81ac;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 40px;
+  }
 }
 
 .feature-list{
