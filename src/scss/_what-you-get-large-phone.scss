@@ -4,15 +4,49 @@
 
   .what-you-get__container {
     grid-template-rows: 95px auto 519px;
+    padding: 47px 10px 6px 22px;
   }
 
   .what-you-get__container{
     width: $large-phone-width;
   }
 
+  .editor-title{
+    align-self: center;
+    font-size: 42px;
+    line-height: 42px;
+    width: 75%;
+
+    p{
+      line-height: 42px;
+      font-size: 42px;
+      margin: 0;
+    }
+  }
+
+  .feature-list{
+    margin: 26px 0 37px 0;
+  }
+
   .feature-list__item{
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 100px;
+  }
+
+  .feature-text-container{
+    width: 71%;
+    text-align: start;
+  }
+
+  .feature-list__img-container {
+    position: relative;
+    width: 111px;
+    height: 84px;
+    margin-top: 1px;
   }
 
   .editor-image{

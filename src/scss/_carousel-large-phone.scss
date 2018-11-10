@@ -3,7 +3,7 @@
 @include large-phone{
 
   .carousel__content-container {
-    padding: 63px 10px 6px 10px;
+    padding: 120px 10px 6px 10px;
     width:  $large-phone-width;
   }
 
@@ -17,5 +17,14 @@
         margin-right: 23px;
       }
     }
+  }
+
+  .carousel__container{
+    min-height: 150px;
+    margin-bottom: 55px;
+  }
+
+  .carousel__social-media{
+    margin: 0 auto;
   }
 }
