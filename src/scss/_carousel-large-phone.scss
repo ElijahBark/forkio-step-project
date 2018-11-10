@@ -2,6 +2,22 @@
 
 @include large-phone{
 
+  .carousel__content-container {
+    padding: 63px 10px 6px 10px;
+    width:  $large-phone-width;
+  }
+
+  .carousel__avatar{
+    .carousel__avatar_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img{
+        margin-right: 23px;
+      }
+    }
+  }
 
 
 
