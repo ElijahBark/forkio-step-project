@@ -8,9 +8,13 @@ html {
   color: #ffffff;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
+  white-space: nowrap;
+  border: 1px solid transparent;
 }
-.container {
-  width: 1380px;
-  margin: 0  auto;
-  position: relative;
+
+.btn:hover {
+  background-color: #fff;
+  color: #8d81ac;
+  border: 1px solid #8d81ac;
 }
+

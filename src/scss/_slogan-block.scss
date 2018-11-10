@@ -19,6 +19,7 @@
     color: #8d81ac;
     text-align: center;
     margin: 1.8rem 0;
+    text-transform: capitalize;
   }
   &__version {
     font-family: Montserrat, sans-serif;
@@ -44,5 +45,6 @@
     bottom: -7rem;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
   }
 }
