@@ -10,8 +10,7 @@ $(document).ready(function () {
     });
     $(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(i){i.preventDefault(),$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(i){i.preventDefault(),$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")}),$(".prices-item").click(function(){$(".prices-item").removeClass("prices-item_active"),$(this).addClass("prices-item_active")});
 
-$(document).ready(function(){
-    // language=JQuery-CSS
+
     $('.carousel__avatar').slick({
         slidesToShow: 1,
         slidesToScroll: 3,
@@ -22,10 +21,10 @@ $(document).ready(function(){
     $('.carousel__slider').slick({
         asNavFor: '.carousel__avatar',
         adaptiveHeight: true
-        // adaptiveHeight: true
     });
 
-    $(".twitter_btn").hover(function () {
+    $(".twitter_btn").hover(
+        function () {
             $(this).children("img").attr("src","img/twitter-icon-hover.png");
             $(this).css({
                 "background-color" : "#ffffff",
@@ -40,7 +39,8 @@ $(document).ready(function(){
             })
         });
 
-    $(".github_btn").hover(function () {
+    $(".github_btn").hover(
+        function () {
             $(this).children("img").attr("src","img/gh-icon-hover.png");
             $(this).css({
                 "background-color" : "#273f4c",
@@ -55,7 +55,8 @@ $(document).ready(function(){
             })
         });
 
-    $(".facebook_btn").hover(function () {
+    $(".facebook_btn").hover(
+        function () {
             $(this).children("img").attr("src","img/facebook-icon-hover.png");
             $(this).css({
                 "background-color" : "#ffffff",
@@ -70,3 +71,4 @@ $(document).ready(function(){
             })
         });
 });
+
